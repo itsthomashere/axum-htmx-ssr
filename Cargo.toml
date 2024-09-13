@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+askama = { version = "0.12.1", features = ["serde", "serde_json", "with-axum"] }
 axum = { version = "0.7.5", features = ["ws", "http2", "macros"] }
 chrono = { version = "0.4.38", features = ["serde"] }
 hyper = { version = "1.4.1", features = ["full"] }
