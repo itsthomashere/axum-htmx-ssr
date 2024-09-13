@@ -4,7 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-askama = { version = "0.12.1", features = ["serde", "serde_json", "with-axum"] }
+askama = { version = "0.12.1", features = ["with-axum"] }
+askama_axum = "0.4.0"
 axum = { version = "0.7.5", features = ["ws", "http2", "macros"] }
 chrono = { version = "0.4.38", features = ["serde"] }
 hyper = { version = "1.4.1", features = ["full"] }
@@ -13,7 +14,7 @@ serde_json = { version = "1.0.127", features = ["raw_value"] }
 sqlx = { version = "0.8.2", features = ["runtime-tokio", "uuid", "postgres", "macros", "derive", "chrono"] }
 tokio = { version = "1.40.0", features = ["full"] }
 tower = "0.5.0"
-tower-http = "0.5.2"
+tower-http = { version = "0.5.2", features = ["fs"] }
 tracing = "0.1.40"
 tracing-subscriber = "0.3.18"
 

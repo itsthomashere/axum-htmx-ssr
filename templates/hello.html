@@ -3,9 +3,35 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="../dependencies/htmx.min.js"></script>
+    <link href="../assets/styles/tailwind-output.css" rel="stylesheet"/>
   </head>
-
-  <body>
-    <h1></h1>
-  </body>
+  <body class = "flex bg-black h-screen text-white">
+    <section class="flex flex-col w-7/12 justify-center items-center">
+      <div></div>
+      <div>
+        <form>
+          <div>
+            <label for="email">Email</label>
+            <input 
+              class="self-end"
+              type="email"
+              id="email"
+              name="email"
+              required
+            >
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input
+              class="self-end"
+              type="password"
+              id="password"
+              name="pssword"
+              required
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+  </body
 </html>
